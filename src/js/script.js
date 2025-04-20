@@ -154,3 +154,51 @@ function informacoes() {
 
     resultadoExe7(`o seu nome é ${nome}<br>voce tem ${idade} anos <br>está cursando ${curso}<br> e está no ${ano} ano <br>`)
 }
+
+//exercicio 8
+
+//texto 1
+const textoTec = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos,métodos e técnicas que visam a resolução de problemas."
+function resultadoExe8a(texto){
+    let elemento = document.getElementsByid("q8-1")
+    elemento.innerHTML = texto;
+}
+function texto1(){
+    textoTec;
+    resultadoExe8a(textoTec.indexOf("em"))
+}
+
+//texto 2
+
+function resultadoExe8b(texto){
+    let elemento = document.getElementById("q8-2")
+    elemento.innerHTML = texto;
+}
+
+function texto2(){
+    textoTec
+    resultadoExe8b(textoTec.lastIndexOf("ia"))
+}
+//texto 3
+
+function resultadoExe8c(texto){
+    let elemento = document.getElementById("q8-3")
+    elemento.innerHTML = texto;
+}
+
+function texto3(){
+    textoTec
+    resultadoExe8c(textoTec.indexOf("ciência"))
+}
+
+//texto 4
+
+function resultadoExe8d(texto){
+    let elemento = document.getElementById("q8-4")
+    elemento.innerHTML = texto;
+}
+
+function texto4(){
+    textoTec
+    resultadoExe8d(textoTec.indexOf("métodos"))
+}
