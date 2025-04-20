@@ -86,8 +86,11 @@ function resultadoExe4(texto){
 }
 function repeticao(){
     let resultado =""
+
+    
     for (let i = 0; i<= 50; i++){
-        resultado += (`o valor é ${i}!`)
+        let virgula = i !== 50 ? "," : "."
+        resultado += (`o valor é ${i}!${virgula}`)
     }
    resultadoExe4(resultado)
 }
