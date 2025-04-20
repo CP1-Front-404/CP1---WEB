@@ -51,4 +51,18 @@ switch (true){
         colocarElemento("Erro ao colocar dados")
  }
  }
+
+
+ //exerccicio 4
+function resulatadoExe4(texto){
+    let elemento = document.getElementById("q4")
+    elemento.innerHTML = texto
+}
+function repeticao(){
+    let resultado =""
+    for (let i = 0; i<= 50; i++){
+        resultado += (`o valor é ${i}!`)
+    }
+   resulatadoExe4(resultado)
+}
     
