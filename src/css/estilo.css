@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: lightcoral;
+  }
+  
+  #container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  header{
+    background: rgb(67, 146, 211);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .box{
+    width: 100%;/*LARGURA de 200px*/
+    height: 200px; /*ALTURA de 400px*/
+    margin: 20px;/*MARGEM EM TODOS OS LADOS DE 20px*/
+    padding: 20px;/*ESPAÇAMENTO INTERNO EM TODOS OS LADOS DE 20px*/
+    border: 1px solid #ddd;/*CRIA UMA BORDA COM 1px de ESPESSURA COM A COR CINZA*/
+    color:#fff;/*COR DA FONTE*/
+    border-radius: 30px;/* DEIXA O CARD COM AS BORDAS ARRENDODAS*/
+    background: beige;
+    color: black;
+    text-align: center;
+  }
+  
+  article button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color:rgb(201, 118, 118) ;
+    
+  }
+  
+  article button:hover{
+    background-color: rgb(83, 75, 124);
+  }
+  
+  
