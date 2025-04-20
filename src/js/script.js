@@ -213,6 +213,7 @@ function resultadoExe9(texto){
 function declarando(){
     let p = "10";
     let r = parseFloat(p);
-    resultadoExe9(typeof(r));
+    
+    resultadoExe9("let p = '10'<br>let r = parseFloat(p)<br>" + (typeof(r)))
 
 }
