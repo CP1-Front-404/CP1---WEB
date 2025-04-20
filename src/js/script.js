@@ -202,3 +202,17 @@ function texto4(){
     textoTec
     resultadoExe8d(textoTec.indexOf("métodos"))
 }
+//Exercício 9 
+
+function resultadoExe9(texto){
+    let elemento = document.getElementById("q9")
+    elemento.innerHTML = texto;
+
+}
+
+function declarando(){
+    let p = "10";
+    let r = parseFloat(p);
+    resultadoExe9(typeof(r));
+
+}
