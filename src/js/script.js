@@ -140,3 +140,17 @@ function media(){
             resultadoExe6("valores incorretos")
     }
 }
+
+//exercicio 7
+function resultadoExe7(texto){
+    let elemento = document.getElementById("q7")
+    elemento.innerHTML = texto
+}
+function informacoes() {
+    let nome = prompt("Seu nome")
+    let idade = prompt("sua idade")
+    let curso = prompt("seu curso")
+    let ano = prompt("seu ano no curso(primeiro,segundo...)")
+
+    resultadoExe7(`o seu nome é ${nome}<br>voce tem ${idade} anos <br>está cursando ${curso}<br> e está no ${ano} ano <br>`)
+}
