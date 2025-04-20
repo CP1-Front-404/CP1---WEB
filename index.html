@@ -1,87 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CP1- WEB/DEV </title>
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <script src="./src/js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CP1 - WEB/DEV</title>
+  <link rel="stylesheet" href="./src/css/estilo.css">
+  <script src="./src/js/script.js" defer></script>
 </head>
 <body>
-    <div id="container">
-        <header>
-            <h1>CP - WEB</h1>
-        </header>
-    <div id="conteudo">
+  <header>
+    <h1>CP1 - WEB/DEV</h1>
+  </header>
 
-        <article class="box" >
-            <h3>exercicio 1</h3>
-           
-            <i >As variaves...</i>
-
-        </article>
-        <article class="box" >
-            <h3>exercicio 2</h3>
-            <i >        os operadores..</i>
-
-        </article>
-        <article class="box" >
-            <h3>exercicio 3</h3>
-            <button onclick="imc()">calcular imc </button>
-            <h2>resultado aqui:</h2>
-            <i id="q3">...</i>
-
-        </article>
-        <article class="box" >
-            <h3>exercicio 4</h3>
-            <button onclick="repeticao()">laço de repetição até 50</button>
-            <h2>resultado aqui:</h2>
-            <i id="q4">...</i>
-
-        </article>
-        <article class="box" >
-            <h3>exercicio 5</h3>
-            <button onclick="login()">Login</button>
-            <h2>reasultado aqui:</h2>
-            <i id="q5">...</i>
-        </article>
-        <article class="box" >
-            <h3>exercicio 6</h3>
-            <button onclick="media()">calcular média</button>
-            <h2>resultado aqui:</h2>
-            <i id="q6">...</i>
-
-        </article>
-
-        <article class="box">
-            <h3>exercicio 7</h3>
-            <button onclick="informacoes()">informações gerais</button>
-            <h2>resultado aqui:</h2>
-            <i id="q7">...</i>
-
-        </article>
-
-        <article class="box">
-            <h3>exercicio 8</h3>
-            <h2><strong>"Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos,métodos e técnicas que visam a resolução de problemas."</strong></h2>
-            <i>1)posição de "em"   </i> <button onclick="texto1()" id="q8-1">1</button>
-
-            <i>2)ultima posiação de "ia"</i> <button onclick="texto2()" id="q8-2">2</button> 
-            
-            <i>3)palavra "ciencia"</i> <button onclick="" id="q8-3">3</button> 
-            
-            <i>4)palavra "métodos"</i> <button onclick="" id="q8-4">4</button>
-
-
-        </article>
-
+  <main id="container">
+    <!-- Exercício 1 -->
+    <div class="exercise-card">
+      <h2>1. Variáveis</h2>
+      <button class="option" onclick="variaveis()">Mostrar Resposta</button>
+      <div class="answer-box" id="q1">...</div>
     </div>
 
-    <footer>
-
-    </footer>
-
+    <!-- Exercício 2 -->
+    <div class="exercise-card">
+      <h2>2. Comparações</h2>
+      <button class="option" onclick="comparacoes()">Mostrar Resposta</button>
+      <div class="answer-box" id="q2">...</div>
     </div>
 
+    <!-- Exercício 3 -->
+    <div class="exercise-card">
+      <h2>3. Calcular IMC</h2>
+      <button class="option" onclick="imc()">Calcular</button>
+      <div class="answer-box" id="q3">...</div>
+    </div>
+
+    <!-- Exercício 4 -->
+    <div class="exercise-card">
+      <h2>4. Laço de repetição até 50</h2>
+      <button class="option" onclick="repeticao()">Executar</button>
+      <div class="answer-box" id="q4">...</div>
+    </div>
+
+    <!-- Exercício 5 -->
+    <div class="exercise-card">
+      <h2>5. Login</h2>
+      <button class="option" onclick="login()">Fazer Login</button>
+      <div class="answer-box" id="q5">...</div>
+    </div>
+
+    <!-- Exercício 6 -->
+    <div class="exercise-card">
+      <h2>6. Calcular Média</h2>
+      <button class="option" onclick="media()">Calcular</button>
+      <div class="answer-box" id="q6">...</div>
+    </div>
+
+    <!-- Exercício 7 -->
+    <div class="exercise-card">
+      <h2>7. Informações Gerais</h2>
+      <button class="option" onclick="informacoes()">Mostrar</button>
+      <div class="answer-box" id="q7">...</div>
+    </div>
+
+    <!-- Exercício 8 -->
+    <div class="exercise-card">
+      <h2>8. Análise de Texto</h2>
+      <p><strong>"Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas."</strong></p>
+      <button class="option" onclick="texto1()">1) Posição de "em"</button>
+      <button class="option" onclick="texto2()">2) Última posição de "ia"</button>
+      <button class="option" onclick="texto3()">3) Palavra "ciência"</button>
+      <button class="option" onclick="texto4()">4) Palavra "métodos"</button>
+      <div class="answer-box" id="q8">...</div>
+    </div>
+
+    <!-- Exercício 9 (espaço reservado, se necessário) -->
+    <div class="exercise-card">
+      <h2>9. [Nova Questão]</h2>
+      <button class="option" onclick="exercicio9()">Executar</button>
+      <div class="answer-box" id="q9">...</div>
+    </div>
+  </main>
 </body>
 </html>

@@ -1,49 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    background: lightcoral;
-  }
-  
-  #container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-  }
-  
-  header{
-    background: rgb(67, 146, 211);
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .box{
-    width: 100%;/*LARGURA de 200px*/
-    height: 200px; /*ALTURA de 400px*/
-    margin: 20px;/*MARGEM EM TODOS OS LADOS DE 20px*/
-    padding: 20px;/*ESPAÇAMENTO INTERNO EM TODOS OS LADOS DE 20px*/
-    border: 1px solid #ddd;/*CRIA UMA BORDA COM 1px de ESPESSURA COM A COR CINZA*/
-    color:#fff;/*COR DA FONTE*/
-    border-radius: 30px;/* DEIXA O CARD COM AS BORDAS ARRENDODAS*/
-    background: beige;
-    color: black;
-    text-align: center;
-  }
-  
-  article button {
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    background-color:rgb(201, 118, 118) ;
-    
-  }
-  
-  article button:hover{
-    background-color: rgb(83, 75, 124);
-  }
-  
-  
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  padding: 0;
+}
+
+/* Header fixo com navegação */
+header {
+  background-color: #05dd66;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container principal do conteúdo */
+#container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+/* Exercícios */
+.exercise-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.exercise-card:hover {
+  transform: translateY(-5px);
+}
+
+.exercise-card h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #3b3b3b;
+}
+
+/* Botões de ação */
+.option {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #e8e8f3;
+  border: 2px solid #cfcfe9;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s, border 0.2s;
+}
+
+.option:hover {
+  background-color: #d1d1f5;
+  border-color: #9d8ee3;
+}
+
+/* Caixas de resposta */
+.answer-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f8f5;
+  border-left: 5px solid #38c172;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: monospace;
+  color: #2e7d32;
+  transition: all 0.3s ease;
+}
+
+.answer-box.error {
+  background-color: #fdecea;
+  border-left-color: #e3342f;
+  color: #cc1f1a;
+}
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 14px;
+}

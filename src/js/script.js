@@ -1,24 +1,50 @@
+function variaveis() {
+
+    let elemento = document.getElementById("q1");
+
 // Exercício 1 
 
-var valor1; // Declara uma variavel com valor undefined
-console.log(valor1);
-var valor2 = null; //Declara uma variavel com valor vazio/nulo
-console.log(valor2);
-var valor3 = 3; // Declara uma variavel com valor
-console.log(valor3);
+    var valor1; // Declara uma variavel com valor undefined
+    console.log(valor1);
+    var valor2 = null; //Declara uma variavel com valor vazio/nulo
+    console.log(valor2);
+    var valor3 = 3; // Declara uma variavel com valor
+    console.log(valor3);
 
-// Exercício 2
-// ==, != e >= são operadores de comparação que vão comparar se dois valores são ,respectivamente, iguais, diferentes ou se um valor é maior ou igual a outro. 
-var a = 1;
-var b = 1;
-var c = 2;
-console.log(a==b)
-// Se o valor de "a" é IGUAL ao de "b" no console aparecerá true e se não for igual false.
-console.log(a!=b) 
-// Se o valor de "a" é DIFERENTE ao de "b" no console aparecerá true e se não for false.
-console.log(b>=a)
-console.log(c>=a)
-// Se o valor de "a" é maior OU igual ao de "b" no console aparecerá true e se não for false.
+    // O texto que será exibido na página
+    var texto = `
+        valor1 (undefined): ${valor1} <br>
+        valor2 (null): ${valor2} <br>
+        valor3 (número): ${valor3} `;
+
+    elemento.innerHTML = texto;
+}
+
+function comparacoes() {
+    let elemento = document.getElementById("q2");
+
+    // Exercício 2
+    // ==, != e >= são operadores de comparação que vão comparar se dois valores são ,respectivamente, iguais, diferentes ou se um valor é maior ou igual a outro. 
+    var a = 1;
+    var b = 1;
+    var c = 2;
+        console.log(a==b)
+    // Se o valor de "a" é IGUAL ao de "b" no console aparecerá true e se não for igual false.
+        console.log(a!=b) 
+    // Se o valor de "a" é DIFERENTE ao de "b" no console aparecerá true e se não for false.
+        console.log(b>=a)
+        console.log(c>=a)
+    // Se o valor de "a" é maior OU igual ao de "b" no console aparecerá true e se não for false.
+
+// Monta o texto que será exibido na página
+     var texto = `
+        a == b → ${a == b} <br>
+        a != b → ${a != b} <br>
+        b >= a → ${b >= a} <br>
+        c >= a → ${c >= a} `;
+
+    elemento.innerHTML = texto;
+}
 
 function imc(){
    
@@ -54,7 +80,7 @@ switch (true){
 
 
  //exerccicio 4
-function resulatadoExe4(texto){
+function resultadoExe4(texto){
     let elemento = document.getElementById("q4")
     elemento.innerHTML = texto
 }
@@ -63,6 +89,6 @@ function repeticao(){
     for (let i = 0; i<= 50; i++){
         resultado += (`o valor é ${i}!`)
     }
-   resulatadoExe4(resultado)
+   resultadoExe4(resultado)
 }
     
