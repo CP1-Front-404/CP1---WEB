@@ -19,3 +19,36 @@ console.log(a!=b)
 console.log(b>=a)
 console.log(c>=a)
 // Se o valor de "a" é maior OU igual ao de "b" no console aparecerá true e se não for false.
+
+function imc(){
+   
+let altura = parseFloat(prompt("qual a  sua altura?"))
+let peso = parseFloat(prompt("qual o seu peso?Em quilos"))
+    
+function calculoImc (altura , peso){
+    let resulatado = (peso/(altura * altura))
+    return resulatado
+ }
+    
+function colocarElemento(texto){
+     let elemeto = document.getElementById("q3")
+    elemeto.innerHTML = texto
+}
+    
+let imc = (calculoImc(altura , peso))
+    
+switch (true){
+    case (imc < 18.5):
+        colocarElemento(`o seu imc é de ${imc.toFixed(2)}: Abaixo do peso`)
+        break
+    case (imc >= 18.5 && imc <= 24.9):
+        colocarElemento(`o seu imc é de ${imc.toFixed(2)}: Peso ideal`)
+        break
+    case (imc >=25 ):
+        colocarElemento(`o seu imc é de ${imc.toFixed(2)}: Acima do peso`)
+        break
+    default:
+        colocarElemento("Erro ao colocar dados")
+ }
+ }
+    
