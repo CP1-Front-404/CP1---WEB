@@ -65,4 +65,52 @@ function repeticao(){
     }
    resulatadoExe4(resultado)
 }
+    // exercicio 5
+ 
+ function resultadoExe5(texto){
+    let elemento = document.getElementById("q5")
+    elemento.innerHTML = texto
+}
+
+function login(){
+    let nome =prompt("Nome do Usuario")
+    let senha =prompt("Senha")
     
+    if(nome == "admin" && senha == "1234"){
+        resultadoExe5("Login realizado com sucesso!")
+    }else{
+        resultadoExe5("Usuário ou senha incorretos")
+    }
+}
+
+//exercicio 6
+
+function resultadoExe6(texto){
+    let elemento = document.getElementById("q6")
+    elemento.innerHTML = texto
+}
+
+
+function media(){
+    let nota1 = parseFloat(prompt("valor da primeira nota:"))
+    let nota2 = parseFloat(prompt("valor da segunda nota:"))
+    let nota3 = parseFloat(prompt("valor da terceira nota:"))
+    let nota4 = parseFloat(prompt("valor da quarta nota:"))
+    let nota5 = parseFloat(prompt("valor da quinta nota:"))
+    let nota6 = parseFloat(prompt("valor da sexta nota:"))
+    let nota7 = parseFloat(prompt("valor da sétima nota:"))
+    
+    
+    let media = (nota1 + nota2 +nota3 + nota4 + nota5 + nota6 + nota7)/7
+    
+    switch (true) {
+        case (media < 6 && media > 0):
+            resultadoExe6(`Sua média foi de ${media.toFixed(2)}, reprovado`)
+            break
+        case (media >= 6 && media <=10):
+            resultadoExe6(`Sua média foi de ${media.toFixed(2)}, aprovado`)
+            break
+        default:
+            resultadoExe6("valores incorretos")
+    }
+}
