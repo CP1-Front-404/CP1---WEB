@@ -160,12 +160,12 @@ function informacoes() {
 //texto 1
 const textoTec = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos,métodos e técnicas que visam a resolução de problemas."
 function resultadoExe8a(texto){
-    let elemento = document.getElementsByid("q8-1")
+    let elemento = document.getElementById("q8-1")
     elemento.innerHTML = texto;
 }
 function texto1(){
     textoTec;
-    resultadoExe8a(textoTec.indexOf("em"))
+    resultadoExe8a("posição em :" + textoTec.indexOf("em"))
 }
 
 //texto 2
@@ -177,7 +177,7 @@ function resultadoExe8b(texto){
 
 function texto2(){
     textoTec
-    resultadoExe8b(textoTec.lastIndexOf("ia"))
+    resultadoExe8b("posição em :" + textoTec.lastIndexOf("ia"))
 }
 //texto 3
 
@@ -188,7 +188,7 @@ function resultadoExe8c(texto){
 
 function texto3(){
     textoTec
-    resultadoExe8c(textoTec.indexOf("ciência"))
+    resultadoExe8c("posição em :" + textoTec.indexOf("ciência"))
 }
 
 //texto 4
@@ -200,7 +200,7 @@ function resultadoExe8d(texto){
 
 function texto4(){
     textoTec
-    resultadoExe8d(textoTec.indexOf("métodos"))
+    resultadoExe8d("posição em :" + textoTec.indexOf("métodos"))
 }
 //Exercício 9 
 
