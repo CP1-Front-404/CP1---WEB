@@ -52,8 +52,8 @@ let altura = parseFloat(prompt("qual a  sua altura?"))
 let peso = parseFloat(prompt("qual o seu peso?Em quilos"))
     
 function calculoImc (altura , peso){
-    let resulatado = (peso/(altura * altura))
-    return resulatado
+    let resultado = (peso/(altura * altura))
+    return resultado;
  }
     
 function colocarElemento(texto){
